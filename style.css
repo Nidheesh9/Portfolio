@@ -653,6 +653,9 @@ a{
 .icon-wrapper a{
     font-size: xx-large;
 }
+.btn-group a{
+    font-size: xx-large;
+}
 
 @media(max-width:1200px){
 
