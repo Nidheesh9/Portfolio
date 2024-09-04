@@ -7,20 +7,15 @@
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
-/* #wrapper{
-    overflow-y: auto;
+#wrapper{
+    /* overflow-y: auto; */
     overflow-x: hidden;
-} */
+}
 
 body{
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
-}
-
-a{
-    text-decoration: none;
-    color: black;
 }
 
 .container{
@@ -582,6 +577,7 @@ a{
 
 .mail:hover{
     transform: scale(1.1);
+    color: white;
 }
 
 .btn-contact{
@@ -649,6 +645,14 @@ footer{
     display: flex;
     gap: 1rem;
 }
+a{
+    text-decoration: none;
+    color: black;
+
+}
+.icon-wrapper a{
+    font-size: xx-large;
+}
 
 @media(max-width:1200px){
 
@@ -707,11 +711,12 @@ footer{
         left: 5%;
     }
     .project-content-right{
-        right: -40%;
+        right: -45%;
+        padding: 25px;
         /* left: 0%; */
     }
     .project-content-right1{
-        right: -35%;
+        right: -40%;
         /* left: 0%; */
     }
     .project-number{
@@ -777,5 +782,21 @@ footer{
         /* margin-left: 0%; */
         /* right: 0%; */
 
+    }
+}
+@media (max-width:600px) {
+
+    .faded-text{
+        font-size:5rem;
+        left: 12px;
+        bottom: -90px;
+    }
+    .skills-container{
+        height: 220vh;
+    }
+    
+    .skill-fade-text{
+        font-size:9rem;
+        bottom: -4rem;
     }
 }
