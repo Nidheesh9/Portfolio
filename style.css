@@ -118,10 +118,16 @@ body{
     user-select: none;
     font-size: 7em;
     position: absolute;
-    color: rgb(231, 231, 231);
+    color: white;
     font-weight: bold;
-    bottom: -17%;
+    bottom: -5%;
     left: -5%;
+}
+
+.hero-container{
+    width: auto; 
+    padding: 0 12rem; 
+    background-color: rgb(231, 231, 231);
 }
 
 .hero-left{
@@ -169,7 +175,7 @@ body{
 }
 
 .user-pic{
-    object-fit: cover;
+    object-fit: contain;
     width: 347px;
     height: 394px;
 }
@@ -276,6 +282,67 @@ body{
 
 .btn-project{
     margin-right: 10px;
+}
+
+/* Experience section styles */
+#experience{
+    /* background-color: rgb(231, 231, 231); */
+    padding: 4rem 0;
+}
+.experience-mainheading{
+    text-align: center;
+    color: violet;
+    font-size: 90px;
+    margin-bottom: 1.5rem;
+}
+.experience-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1rem 0 3rem 0;
+}
+.experience-card{
+    background: linear-gradient(180deg, #ffffff, #fbfbfb);
+    border-radius: 10px;
+    padding: 1.6rem;
+    box-shadow: 0 6px 18px rgba(31,31,31,0.12);
+    width: 46%;
+    color: #343d68;
+}
+.experience-role{
+    font-size: 40px;
+    font-weight: 700;
+    color: #343d68;
+}
+.experience-company{
+    font-size: 30px;
+    color: violet;
+    margin-top: 4px;
+    transition: all 200ms;
+}
+.experience-duration{
+    font-size: 20px;
+    color: #6b7280;
+    margin-top: 6px;
+}
+.experience-desc{
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #2b2f45;
+}
+
+.experience-company:hover{
+    color: blueviolet;
+}
+
+.experience-skill-container{
+    display: flex;
+    margin: 10px 0;
+    gap:10px
 }
 
 #project{
@@ -391,7 +458,7 @@ body{
 }
 
 .project-skill{
-    width: 40px;
+    width: 35px;
 }
 
 .project-heading{
@@ -568,7 +635,7 @@ body{
     z-index: 2;
     text-decoration: none;
     color: white;
-    width: 25rem;
+    width: 30rem;
     text-align: center;
     margin: 20px;
     font-size: x-large;
@@ -665,7 +732,7 @@ a{
     .nav{
         display: flex;
         flex-direction: column;
-
+        gap: 2rem;
     }
     
     .hero{
@@ -673,11 +740,15 @@ a{
         flex-direction: column;
         justify-content: center;
         margin: 4rem 0;
+        padding: 0;
+    }
 
+    .hero-container{
+        padding: 0 5rem;
     }
 
     .faded-text{
-        bottom: -10.1%;
+        position: relative;;
         left: 0%;
     }
 
@@ -688,6 +759,17 @@ a{
 
     .project-container{
         width: 100vw;
+    }
+    .experience-container{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 1rem 2rem 1rem;
+    }
+    .experience-card{
+        width: 90%;
+        margin: 0 auto;
     }
     
     .project-card{
@@ -746,7 +828,7 @@ a{
         flex-direction: column;
         padding: 0rem;
         margin: 1rem auto;
-        gap: 20px;
+        gap: 8rem;
     }
     .skill-container-left{
         margin-left: 5%;
@@ -791,15 +873,36 @@ a{
 
     .faded-text{
         font-size:5rem;
-        left: 12px;
-        bottom: -90px;
+        position: relative;
     }
     .skills-container{
-        height: 190vh;
+        margin-top: 40px;
+        height: 145vh;
+        gap: 2rem;
     }
     
     .skill-fade-text{
         font-size:9rem;
         bottom: -4rem;
+    }
+
+    .hero-container{
+        padding: 0 2rem;
+    }
+
+    .experience-mainheading{
+        font-size: 70px;
+    }
+}
+
+@media (max-width:400px){
+    .nav-items{
+        gap: 0.5rem;
+    }
+    .skills-container{
+        height: 210vh;
+    }
+    .hero-container{
+        padding: 0;
     }
 }
