@@ -540,18 +540,19 @@ body{
 
 .blob-style{
     position: absolute;
-    top: 20%;
-    left: 20%;
-    animation: blob 2s linear infinite;
+    bottom: 0;
+    left: 0;
+    animation: blob 3s linear infinite;
     z-index: -5;
 }
 
 @keyframes blob{
     50%{
-        top: 25%;
-        left: 15%;
+        bottom: 30%;
+        left: 30%;
     }
 }
+
 .skills-logo{
     width: 90px;
     aspect-ratio: 1/1;
@@ -908,6 +909,22 @@ a{
     .skills-logo{
         width: 70px;
     }
+
+    .mail{
+        font-size: larger;
+    }
+
+    .blob-style{
+        width: 250px;
+        aspect-ratio: 1/1;
+    }
+
+    @keyframes blob {
+        50%{
+            bottom: 20%;
+            left: 40%;
+        }
+    }
 }
 
 @media (max-width:400px){
@@ -916,5 +933,23 @@ a{
     }
     .hero-container{
         padding: 0;
+    }
+    .experience-mainheading{
+        font-size: 50px;
+    }
+    .experience-role{
+        font-size: 30px;
+    }
+    .experience-company{
+        font-size: 20px;
+    }
+    .skill-fade-text{
+        font-size: 7rem;
+    }
+     @keyframes blob {
+        50%{
+            bottom: 45%;
+            left: 20%;
+        }
     }
 }
